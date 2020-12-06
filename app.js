@@ -1,7 +1,7 @@
 $(() => {
 
   $('button').on('click', (event) => {
-    const userInput = $('input[type="text"]').val();
+    const userInput = $("input[type='text']").val();
 
 
     $.ajax({
