@@ -3,6 +3,21 @@ body {
   background: red;
 }
 
+#cover {
+  width: 80%;
+  position: absolute;
+  top: 150px;
+  left: 60px;
+  z-index: 1;
+}
+
+#front {
+  width: 80%;
+  position: absolute;
+  top: 150px;
+  left: 60px;
+}
+
 button {
   background-color: yellow;
   cursor: pointer;
@@ -21,7 +36,8 @@ h3 {
 p {
   margin: 0 auto 15px auto;
   font-size: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
 }
 
 hr {
