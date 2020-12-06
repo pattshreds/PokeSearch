@@ -1,0 +1,30 @@
+body {
+  text-align: center;
+  background: red;
+}
+
+button {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+h1 {
+  margin-bottom: 5px;
+  font-size: 50px;
+}
+
+h3 {
+  margin: auto auto 5px auto;
+  font-size: 25px;
+}
+
+p {
+  margin: 0 auto 15px auto;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+hr {
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
