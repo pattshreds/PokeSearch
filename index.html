@@ -10,20 +10,24 @@
     <title></title>
   </head>
   <body>
-    <h1> Pokemon Information </h1>
-      <input type="text" placeholder="Choose a Pokemon"/>
-      <button type="button">Search Pokedex!</button>
+    <h1> PokeSearch </h1>
+        <input type="text" id="textbox" placeholder="Choose a Pokemon"/>
+        <button type="button" id="openModal">Search Pokedex!</button>
+        <a href="compare.html">Compare Pokemon!</a>
       <!-- <form>
         <input type="number" min="0" max="898" />
         <input type="submit" id="search" value="Search Pokedex!" />
       </form> -->
-      <hr>
-        <div class="pokedex">
-          <img src="pokedex_cover.png" id="cover" alt="Pokedex cover" />
-          <img src="pokedex_front.jpg" id="front" alt="Pokedex Interface" />
-        </div>
-        <!-- <div class="pokedex_open">
-          <img src="pokedex_front.jpg" alt="Pokedex interface" />
-        </div> -->
+      <div id="modal_screen">
+          <div id="modal_close">
+            <button id="close">
+            Close
+            </button>
+          </div>
+      </div>
+      <div class="pokedex">
+        <!-- <img src="pokedex_cover.png" id="cover" alt="Pokedex cover" /> -->
+        <img src="pokedex_front.jpg" id="front" alt="Pokedex Interface" />
+      </div>
   </body>
 </html>

@@ -1,31 +1,85 @@
 body {
   text-align: center;
-  background: red;
+  background: linear-gradient(180deg, rgba(30,182,255,1) 0%, rgba(255,215,0,1) 100%);
 }
 
-#cover {
-  width: 80%;
-  position: absolute;
-  top: 150px;
-  left: 60px;
-  z-index: 1;
+#openModal {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 600px;
+  top: 45em;
+  left: -11.9em;
 }
 
-#front {
-  width: 80%;
-  position: absolute;
-  top: 150px;
-  left: 60px;
-}
-
-button {
-  background-color: yellow;
+#compare {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 
+.compare_container {
+  height: 600px;
+}
+
+#textbox {
+  font-size: 20px;
+  margin: 0;
+  height: 150px;
+  width: 205px;
+  position: relative;
+  top: 17.9em;
+  left: 2.1em;
+}
+
+.pokedex {
+  display: flex;
+  justify-content: center;
+}
+
+/* #cover {
+  animation-name: open;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  width: 400px;
+  position: absolute;
+  top: 398px;
+  left: 50px;
+  z-index: 2;
+} */
+
+#modal_screen {
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px black;
+  background-color: white;
+  margin: 100px auto auto auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 600px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  overflow: scroll;
+}
+
+#front {
+  margin: 0 auto auto auto;
+  width: 400px;
+  z-index: -1;
+}
+
 h1 {
-  margin-bottom: 5px;
-  font-size: 50px;
+  margin: 50px auto 0px auto;
+  font-size: 75px;
+  font-family: 'pokemon hollow';
+  color: #ffc600;
+  text-shadow: 0 0 20px black;
+  letter-spacing: 4px;
 }
 
 h3 {
@@ -34,13 +88,19 @@ h3 {
 }
 
 p {
-  margin: 0 auto 15px auto;
+  /* margin: 0 auto 15px auto; */
   font-size: 18px;
   letter-spacing: 1px;
   text-transform: capitalize;
 }
 
-hr {
-  margin-bottom: 20px;
-  border: 1px solid black;
+/* ================== */
+/* Animations */
+/* ================== */
+
+@keyframes open {
+  0% {}
+  80% {z-index: 0; left: 450px;}
+  90% {z-index: -1}
+  100% {z-index: -2; right:450px; margin: auto auto auto auto;}
 }
