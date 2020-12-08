@@ -4,67 +4,33 @@ body {
   background-attachment: fixed;
 }
 
-#openModal {
-  background-color: transparent;
-  border: none;
+#about {
+  margin-top: 150px;
+  background-color: purple;
   cursor: pointer;
-  position: relative;
-  color: #ffc600;
-  /* top: 600px; */
-  top: 48.8em;
-  left: -11.8em;
-}
-
-#textbox {
-  border: 0px;
+  border-radius: 20px;
+  width: 300px;
+  height: 50px;
+  color: yellow;
   font-size: 20px;
-  margin: 0;
-  height: 130px;
-  width: 205px;
-  position: relative;
-  top: 20.4em;
-  left: 2.3em;
-}
-
-.pokedex {
-  display: flex;
-  justify-content: center;
-}
-
-#cover {
-  animation-name: open;
-  animation-delay: 1s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  width: 400px;
-  z-index: 2;
 }
 
 #modal_screen {
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 25px;
   box-shadow: 5px 5px 10px black;
   background-color: white;
-  margin: 100px auto auto auto;
+  margin: 25px auto auto auto;
   text-align: center;
+  font-family: helvetica;
   left: 0;
   right: 0;
   width: 400px;
-  height: 600px;
+  line-height: 25px;
   display: none;
   position: absolute;
   z-index: 1;
   overflow: scroll;
-}
-
-#front {
-  margin: 0 auto;
-  width: 400px;
-  z-index: -1;
 }
 
 #close {
@@ -85,14 +51,8 @@ h1 {
 }
 
 h3 {
-  margin: auto auto 5px auto;
+  margin-bottom: 0px;
   font-size: 25px;
-}
-
-h4 {
-  font-family: helvetica;
-  font-weight: normal;
-  letter-spacing: 1px;
 }
 
 p {
@@ -105,8 +65,9 @@ p {
 
 #picture {
   margin-top: 5px;
-  width: 100px;
-  height: 100px;
+  margin-bottom: 5px;
+  width: 270px;
+  height: 400px;
 }
 
 nav {
@@ -115,10 +76,14 @@ nav {
   justify-content: center;
 }
 
-h5 {
-  margin-bottom: 10px;
-  font-family: helvetica;
-  font-weight: normal;
+#header {
+  margin: 20px auto 0px auto;
+  font-size: 75px;
+  font-family: 'pokemon hollow';
+  text-decoration: none;
+  color: #ffc600;
+  text-shadow: 0 0 20px black;
+  letter-spacing: 4px;
 }
 
 a {
@@ -142,10 +107,3 @@ hr {
 /* ================== */
 /* Animations */
 /* ================== */
-
-@keyframes open {
-  0% {}
-  80% {z-index: 0; left: 35em;}
-  85% {z-index: -2}
-  100% {z-index: -2; right: 0em;}
-}
