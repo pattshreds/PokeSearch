@@ -115,8 +115,9 @@ p {
   text-transform: capitalize;
 }
 
-#picture {
-  margin-top: 5px;
-  width: 100px;
-  height: 100px;
+img {
+  opacity: .75;
+  text-align: center;
+  margin: 285px 0 0 0;
+  width: 600px;
 }

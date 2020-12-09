@@ -59,7 +59,6 @@ p {
   font-family: helvetica;
   font-size: 18px;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
 
 #picture {
@@ -101,4 +100,13 @@ a:hover {
 hr {
   border: 1px solid black;
   max-width: 1400px;
+}
+
+#pika {
+  position: fixed;
+  bottom: -2px;
+  opacity: .75;
+  text-align: center;
+  width: 200px;
+  left: 150px;
 }
