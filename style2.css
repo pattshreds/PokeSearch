@@ -139,9 +139,10 @@ h5 {
 }
 
 p {
-  /* margin: 0 auto 15px auto; */
+  margin: 0 auto 15px auto;
   font-family: helvetica;
-  font-size: 14px;
+  font-size: 18px;
+  letter-spacing: 1px;
   text-transform: capitalize;
 }
 

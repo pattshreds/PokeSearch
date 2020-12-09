@@ -42,4 +42,4 @@ $(() => {
         };
         $('#close').on('click', closeModal);
     });
-  });
+});
