@@ -39,6 +39,7 @@ $(() => {
       });
         const closeModal = () => {
         $('#modal_screen').css('display', 'none');
+        const userInput = $("input[type='text']").val('');
         };
         $('#close').on('click', closeModal);
     });
