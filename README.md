@@ -1,7 +1,9 @@
 # PokéSearch
 
-Link to the App:
-pattshreds.github.io/pokedex_app/
+Link to the app is
+<a href="pattshreds.github.io/pokedex_app/">
+  here.
+</a>  
 
 <hr>
 
