@@ -67,7 +67,7 @@ body {
   overflow: scroll;
 }
 
-.close {
+.close, .close2 {
   margin-bottom: 10px;
   background-color: purple;
   cursor: pointer;

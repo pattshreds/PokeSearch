@@ -138,6 +138,7 @@ a {
   text-decoration: none;
 }
 
+/* Not sure why yet, but on some monitors the hover affects are pixelated. */
 .nav-btn:hover {
   color: #ff6242;
   font-weight: bold;
