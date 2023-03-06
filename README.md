@@ -15,6 +15,6 @@ No installation necessary to run this app.
 <br><br>
 Current unsolved problems:
 <ul>
-<li>Search bar will only perform one search, then the app needs to be refreshed to search again.</li>
-  <li>Animation isn't as responsive as I want it to be.</li>
+<li><s>Search bar will only perform one search, then the app needs to be refreshed to search again.</s></li>
+  <li><s>Animation isn't as responsive as I want it to be.</s></li>
   </ul>
