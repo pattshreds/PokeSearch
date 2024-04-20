@@ -1,161 +1,93 @@
 @font-face {
-  font-family: pokemon-hollow;
-  src: url(Pokemon\ Hollow.ttf);
+    font-family: pokemon-hollow;
+    src: url(Pokemon\ Hollow.ttf);
+}
+
+@keyframes open {
+    0% {
+        position: relative;
+        z-index: 1;
+    }
+    50% {
+        position: relative;
+        z-index: 0;
+    }
+    80% {
+        position: relative;
+        z-index: -1;
+        margin-left: 60em;
+    }
+    100% {
+        position: relative;
+        z-index: -1;
+        margin-right: 0em;
+    }
 }
 
 body {
-  text-align: center;
-  background: linear-gradient(180deg, rgba(30,182,255,1) 0%, rgba(255,215,0,1) 100%);
-  background-attachment: fixed;
+    background: linear-gradient(
+        180deg,
+        rgba(30, 182, 255, 1) 0%,
+        rgba(255, 215, 0, 1) 100%
+    );
+    background-attachment: fixed;
 }
 
-#openModal {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  color: #ffc600;
-  top: 39.4em;
-  left: -11.8em;
+#app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#textbox {
-  border: 0px;
-  font-size: 20px;
-  margin: 0;
-  height: 130px;
-  width: 205px;
-  position: relative;
-  top: 14em;
-  left: 2.1em;
+#app-title {
+    font-family: pokemon-hollow;
+    color: yellow;
+    font-size: 150px;
+    margin-bottom: 0;
 }
 
-.pokedex {
-  display: flex;
-  justify-content: center;
+#navbar {
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4em;
 }
 
-#cover {
-  animation-name: open;
-  animation-delay: 1s;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 272px;
-  width: 400px;
-  z-index: 2;
+.nav-btn {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-#modal_screen {
-  padding: 10px;
-  border-radius: 25px;
-  box-shadow: 5px 5px 10px black;
-  background-color: white;
-  margin: 100px auto auto auto;
-  text-align: center;
-  left: 0;
-  right: 0;
-  width: 400px;
-  height: 600px;
-  display: none;
-  position: absolute;
-  z-index: 1;
-  overflow: scroll;
+#search-instructions {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+}
+
+#pokedex {
+    width: 90%;
+    height: 70vh;
 }
 
 #front {
-  margin-top: 90px;
-  width: 400px;
-  z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
-#close {
-  margin-bottom: 10px;
-  background-color: purple;
-  cursor: pointer;
-  border-radius: 9px;
-  color: yellow;
-}
-
-.title {
-  margin: -50px auto -20px auto;
-  font-size: 75px;
-  font-family: 'pokemon-hollow';
-  color: #ffc600;
-  text-shadow: 0 0 10px black;
-  letter-spacing: 10px;
-}
-
-h3 {
-  margin: auto auto 5px auto;
-  font-size: 25px;
-}
-
-h4 {
-  font-family: helvetica;
-  font-weight: normal;
-  letter-spacing: 1px;
-}
-
-h5 {
-  margin-top: -90px;
-}
-
-p {
-  margin: 0 auto 15px auto;
-  font-family: helvetica;
-  font-size: 18px;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-}
-
-#picture {
-  margin-top: 5px;
-  width: 100px;
-  height: 100px;
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-h5 {
-  margin-bottom: 10px;
-  font-family: helvetica;
-  font-weight: normal;
-}
-
-a {
-  padding: 0 10px 0 10px;
-  color: black;
-  font-family: helvetica;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-/* Not sure why yet, but on some monitors the hover affects are pixelated. */
-.nav-btn:hover {
-  color: #ff6242;
-  font-weight: bold;
-}
-
-hr {
-  border: 1px solid black;
-  max-width: 1400px;
-}
-
-/* ================== */
-/* Animations */
-/* ================== */
-
-@keyframes open {
-  0% {}
-  80% {z-index: 0; left: 60em;}
-  85% {z-index: -2}
-  100% {z-index: -2; right: 0em;}
+#cover {
+    animation: open 3s ease-out;
+    animation-fill-mode: forwards;
+    height: 102.5%;
+    width: 100%;
+    object-fit: contain;
+    margin-top: -75vh;
 }

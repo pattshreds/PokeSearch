@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js" charset="utf-8">
-    </script>
-    <script src="app.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>PokéSearch</title>
-  </head>
-  <body>
-    <h1 class="title"> PokéSearch </h1>
-    <hr>
-    <nav>
-      <a class="nav-btn" href="compare.html">Compare Pokémon</a>
-      <a class="nav-btn" href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki">About Pokémon</a>
-      <a class="nav-btn" href="berries.html">Berries</a>
-      <a class="nav-btn" href="about.html">About the Dev</a>
-    </nav>
-    <hr>
-        <input type="text" id="textbox" placeholder="Choose a Pokémon"/>
-        <button type="button" id="openModal">Search Pokédex!</button>
-        <div id="modal_screen">
-          <div id="modal_close">
-            <button id="close">
-            Close
-            </button>
-          </div>
-          <div id="modal_screen_data"></div>
-        </div>  
-      <h5><i>Type a Pokémon name, or Pokédex ID in the Pokédex below! (1 - 858)</i><h5>
-      <div class="pokedex">
-        <img src="pokedex_cover.png" id="cover" alt="Pokedex cover" />
-        <img src="pokedex_front.jpg" id="front" alt="Pokedex Interface" />
-      </div>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            charset="utf-8"
+        ></script>
+        <script src="app.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>PokéSearch</title>
+    </head>
+    <body>
+        <div id="app-container">
+            <h1 id="app-title">PokéSearch</h1>
+            <nav id="navbar">
+                <a class="nav-btn" href="compare.html">Compare</a>
+                <a
+                    class="nav-btn"
+                    href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki"
+                    >Pokémon</a
+                >
+                <a class="nav-btn" href="berries.html">Berries</a>
+                <a class="nav-btn" href="about.html">About</a>
+            </nav>
+            <h1 id="search-instructions">
+                Type a Pokémon name, or Pokédex ID in the Pokédex below! (1 -
+                858)
+            </h1>
+            <div id="pokedex">
+                <img
+                    src="pokedex_front.jpg"
+                    id="front"
+                    alt="Pokedex Interface"
+                />
+                <img src="pokedex_cover.png" id="cover" alt="Pokedex cover" />
+                <!-- <input
+                    type="text"
+                    id="textbox"
+                    placeholder="Choose a Pokémon"
+                    autofocus
+                /> -->
+                <!-- <button type="button" id="openModal">Search Pokédex!</button> -->
+
+                <!-- <div id="modal_screen"> -->
+                <!-- <button id="modal_close">Close</button> -->
+                <!-- <div id="modal_screen_data"></div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </body>
 </html>
