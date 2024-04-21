@@ -99,3 +99,19 @@ body {
     object-fit: contain;
     margin-top: -75vh;
 }
+
+::-webkit-input-placeholder {
+    white-space: pre-line;
+}
+
+#textbox {
+    border: none;
+    font-size: 60px;
+    position: absolute;
+    right: 5.2em;
+    top: 18.5em;
+    width: 7em;
+    height: 5em;
+    padding: 0;
+    text-align: center;
+}
