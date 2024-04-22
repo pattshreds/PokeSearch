@@ -74,9 +74,13 @@ body {
 }
 
 #search-instructions {
+    font-size: 35px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 10px;
+}
+#search-instructions em {
+    font-size: 25px;
 }
 
 #pokedex {
@@ -114,4 +118,40 @@ body {
     height: 5em;
     padding: 0;
     text-align: center;
+}
+
+#open-modal {
+    border: none;
+    background-color: transparent;
+    color: yellow;
+    font-weight: bold;
+    font-size: 47px;
+    position: absolute;
+    bottom: 7.8em;
+    right: 9.8em;
+    width: 6em;
+    height: 4em;
+}
+
+#modal_screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 60px;
+    width: 80%;
+    height: 30em;
+    top: 4em;
+    margin-left: 10%;
+    overflow: scroll;
+    background-color: white;
+}
+
+#modal-close {
+    font-size: 47px;
+}
+
+/* First media query is for a 50% split on 13" screen. */
+@media (min-width: 640px) {
 }

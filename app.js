@@ -1,5 +1,5 @@
 $(() => {
-    $('#openModal').on('click', (event) => {
+    $('#open-modal').on('click', (event) => {
         const userInput = $("input[type='text']").val();
         $('#modal_screen').css('display', 'block');
         $.ajax({
@@ -39,11 +39,12 @@ $(() => {
                     .html(data.game_indices[i].version.name);
             }
         });
-        const closeModal = () => {
-            $('#modal_screen_data').empty();
-            $('#modal_screen').css('display', 'none');
-            userInput = $("input[type='text']").val('');
-        };
-        $('#close').on('click', closeModal);
     });
+    const closeModal = () => {
+        console.log('clicked');
+        $('#modal_screen_data').empty();
+        $('#modal_screen').css('display', 'none');
+        userInput = $("input[type='text']").val('');
+    };
+    $('#modal-close').on('click', closeModal);
 });

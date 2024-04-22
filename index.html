@@ -2,9 +2,14 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
-        <script
+        <!-- <script
             src="https://code.jquery.com/jquery-3.5.1.min.js"
             charset="utf-8"
+        ></script> -->
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
         ></script>
         <script src="app.js" charset="utf-8"></script>
         <link rel="stylesheet" href="style.css" />
@@ -24,8 +29,9 @@
                 <a class="nav-btn" href="about.html">About</a>
             </nav>
             <h1 id="search-instructions">
-                Type a Pokémon name, or Pokédex ID in the Pokédex below! (1 -
-                858)
+                Type a Pokémon name, or Pokédex ID on the screen below!
+                <br />
+                <em>(ID 1 - 858)</em>
             </h1>
             <div id="pokedex">
                 <img
@@ -40,12 +46,12 @@
                     placeholder="Choose a Pokémon"
                     autofocus
                 />
-                <!-- <button type="button" id="openModal">Search Pokédex!</button> -->
+                <button type="button" id="open-modal">Search Pokédex!</button>
 
-                <!-- <div id="modal_screen"> -->
-                <!-- <button id="modal_close">Close</button> -->
-                <!-- <div id="modal_screen_data"></div> -->
-                <!-- </div> -->
+                <div id="modal_screen">
+                    <button type="button" id="modal-close">Close</button>
+                    <div id="modal_screen_data"></div>
+                </div>
             </div>
         </div>
     </body>
