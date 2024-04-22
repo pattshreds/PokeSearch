@@ -34,12 +34,9 @@
 }
 
 body {
-    background: linear-gradient(
-        180deg,
-        rgba(30, 182, 255, 1) 0%,
-        rgba(255, 215, 0, 1) 100%
-    );
+    background: linear-gradient(180deg, #539ae2 0%, #e5c531 80%);
     background-attachment: fixed;
+    height: 100svh;
 }
 
 #app-container {
