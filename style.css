@@ -51,6 +51,7 @@ body {
     font-family: pokemon-hollow;
     color: yellow;
     font-size: 150px;
+    margin-top: 20px;
     margin-bottom: 0;
 }
 
@@ -84,6 +85,7 @@ body {
 }
 
 #pokedex {
+    position: relative;
     overflow: hidden;
     width: 100%;
     height: 70vh;
@@ -110,10 +112,11 @@ body {
 
 #textbox {
     border: none;
+    background-color: transparent;
     font-size: 60px;
     position: absolute;
-    right: 5.2em;
-    top: 18.5em;
+    right: 5.5em;
+    top: 7em;
     width: 7em;
     height: 5em;
     padding: 0;
@@ -127,8 +130,8 @@ body {
     font-weight: bold;
     font-size: 47px;
     position: absolute;
-    bottom: 7.8em;
-    right: 9.8em;
+    bottom: 6.5em;
+    right: 9.5em;
     width: 6em;
     height: 4em;
 }
