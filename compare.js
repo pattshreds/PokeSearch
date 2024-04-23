@@ -1,6 +1,6 @@
 $(() => {
     $('#compare').on('click', (event) => {
-        const userInput = $("input[type='text']").val();
+        const userInput = $("input[id='textbox1]").val();
         $('#modal_screen').css('display', 'inline');
 
         $.ajax({
