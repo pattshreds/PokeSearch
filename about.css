@@ -76,8 +76,11 @@ body {
 /* Galaxy S21+ 384px × 854px */
 
 @media (max-height: 790px) {
+    #footer {
+        top: 42em;
+    }
+
     #footer img {
         width: 40%;
-        border: 4px solid green;
     }
 }
