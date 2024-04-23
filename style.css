@@ -155,3 +155,15 @@ body {
 #picture {
     width: 50%;
 }
+
+/* Galaxy S21+ 384px × 854px */
+@media (min-height: 800px) {
+    #textbox {
+        top: 6.5em;
+    }
+
+    #open-modal {
+        top: 22.8em;
+        right: 10.9em;
+    }
+}
