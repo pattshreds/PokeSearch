@@ -37,6 +37,7 @@ body {
     background: linear-gradient(180deg, #539ae2 0%, #e5c531 80%);
     background-attachment: fixed;
     height: 100svh;
+    overflow: hidden;
 }
 
 #app-container {
@@ -97,5 +98,13 @@ body {
 }
 
 #footer img {
-    width: 100%;
+    width: 80%;
+}
+
+/* Galaxy S21+ 384px × 854px */
+@media (min-width: 380px) and (min-height: 850px) {
+    #footer {
+        bottom: -20em;
+        left: 5em;
+    }
 }

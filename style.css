@@ -154,6 +154,19 @@ body {
     margin-bottom: 40px;
 }
 
+/* Galaxy S21+ 384px × 854px */
+@media (min-width: 380px) and (min-height: 850px) {
+    #textbox {
+        top: 6em;
+        right: 5em;
+    }
+
+    #open-modal {
+        bottom: 5.8em;
+        right: 9.3em;
+    }
+}
+
 /* 50% split on Macbook Pro 13" screen. */
 /* Viewport 640 x 688 */
 @media (min-width: 640px) {
