@@ -206,16 +206,11 @@ body {
     #navbar {
         justify-content: center;
         gap: 5em;
+        padding: 5px 0;
     }
 
     .nav-btn:hover {
-        font-weight: bold;
-        background: -webkit-linear-gradient(180deg, #ea7a3c, #71c558);
-        background-clip: none;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: black;
+        color: #e5c531;
     }
 
     #textbox {

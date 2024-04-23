@@ -74,12 +74,12 @@ body {
     white-space: pre-line;
 }
 
-#textbox1:focus,
-#textbox2:focus {
+#textbox1:focus {
     outline: 0;
 }
 
 #compare {
+    cursor: pointer;
     font-size: 18px;
     border: none;
     padding: 6px 10px;
@@ -89,7 +89,7 @@ body {
     font-weight: bold;
 }
 
-#modals {
+.modals {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -98,6 +98,10 @@ body {
     width: 90svw;
     margin-top: -10em;
     z-index: -10;
+}
+
+.modal-increase-z-index {
+    z-index: 10;
 }
 
 #modal_screen,
@@ -132,4 +136,54 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+/* 13" Macbook Pro 1280x688 */
+@media (min-width: 1200px) and (680px <= height <= 700px) {
+    body {
+        background: #539ae2;
+    }
+
+    #search-instructions {
+        margin: 2em auto;
+        font-weight: 100;
+    }
+
+    #navbar {
+        justify-content: center;
+        gap: 5em;
+        padding: 5px 0;
+    }
+
+    .nav-btn:hover {
+        color: #e5c531;
+    }
+
+    #compare:hover {
+        background-color: #e95200;
+    }
+
+    #open-modal {
+        font-size: 15px;
+        top: 22.5em;
+        right: 42em;
+    }
+
+    #modal_screen,
+    #modal_screen2 {
+        border-radius: 20px;
+        font-size: 15px;
+        width: 30%;
+        height: 70svh;
+        margin: 0;
+    }
+
+    #footer {
+        text-align: center;
+        width: 100%;
+    }
+
+    #picture {
+        width: 25%;
+    }
 }
