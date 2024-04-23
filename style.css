@@ -1,5 +1,5 @@
 /* Mobile-first styling for viewport size 360x800 */
-/* Chrome dev tools mobile dimensions ~415x885 */
+/* Actual size 412x828 */
 
 @font-face {
     font-family: pokemon-hollow;
@@ -157,7 +157,8 @@ body {
 }
 
 /* Galaxy S21+ 384px × 854px */
-@media (max-height: 840px) {
+/* Actual size 412x782 */
+@media (max-height: 800px) {
     #textbox {
         top: 6.5em;
     }
