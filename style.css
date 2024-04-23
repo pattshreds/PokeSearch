@@ -48,129 +48,26 @@ body {
 
 #app-title {
     font-family: pokemon-hollow;
-    color: yellow;
-    font-size: 150px;
-    margin-top: 20px;
-    margin-bottom: 0;
+    font-size: 55px;
+    color: #e5c531;
+    margin: 0;
 }
 
 #navbar {
     width: 100%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    height: 6em;
+    padding: 10px 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 4em;
+    justify-content: space-around;
+    gap: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .nav-btn {
-    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-#search-instructions {
-    font-size: 35px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0 10px;
-}
-#search-instructions em {
-    font-size: 25px;
-}
-
-#pokedex {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 70vh;
-}
-
-#front {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
-#cover {
-    animation: open 3s ease-out 1s forwards;
-    position: relative;
-    height: 101.5%;
-    width: 100%;
-    object-fit: contain;
-    margin-top: -115em;
-    z-index: 1;
-}
-
-#textbox {
-    border: none;
-    background-color: transparent;
-    font-size: 60px;
-    position: absolute;
-    right: 5em;
-    top: 6.7em;
-    width: 7em;
-    height: 5em;
-    text-align: center;
-}
-
-::-webkit-input-placeholder {
-    white-space: pre-line;
-}
-
-#textbox:focus {
-    outline: 0;
-}
-
-#open-modal {
-    border: none;
-    background-color: transparent;
-    color: yellow;
-    font-weight: bold;
-    font-size: 47px;
-    position: absolute;
-    bottom: 6.4em;
-    right: 9.5em;
-    width: 6em;
-    height: 4em;
-}
-
-#modal_screen {
-    display: none;
-    text-align: center;
-    position: absolute;
-    font-size: 60px;
-    width: 80%;
-    height: 30em;
-    top: 4em;
-    margin-left: 10%;
-    overflow: scroll;
-    background-color: white;
-}
-
-#modal-close {
-    font-size: 47px;
-    margin-bottom: 40px;
-}
-
-/* Galaxy S21+ 384px × 854px */
-@media (min-width: 380px) and (min-height: 850px) {
-    #textbox {
-        top: 6em;
-        right: 5em;
-    }
-
-    #open-modal {
-        bottom: 5.8em;
-        right: 9.3em;
-    }
-}
-
-/* 50% split on Macbook Pro 13" screen. */
-/* Viewport 640 x 688 */
-@media (min-width: 640px) {
+    font-size: 20px;
 }

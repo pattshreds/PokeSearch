@@ -1,0 +1,175 @@
+/* Mobile-first styling for viewport size 360x800 */
+
+@font-face {
+    font-family: pokemon-hollow;
+    src: url(Pokemon\ Hollow.ttf);
+}
+
+@keyframes open {
+    0% {
+        position: relative;
+        z-index: 1;
+    }
+    50% {
+        position: relative;
+        z-index: 0;
+    }
+    60% {
+        opacity: 90%;
+    }
+
+    80% {
+        position: relative;
+        z-index: -1;
+        margin-left: 60em;
+        opacity: 80%;
+    }
+    100% {
+        position: relative;
+        z-index: -1;
+        margin-right: 0;
+        display: none;
+        opacity: 0%;
+    }
+}
+
+body {
+    background: linear-gradient(180deg, #539ae2 0%, #e5c531 80%);
+    background-attachment: fixed;
+    height: 100svh;
+    border: 4px solid bredlue;
+}
+
+#app-container {
+    border: 4px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-title {
+    font-family: pokemon-hollow;
+    color: yellow;
+}
+
+#navbar {
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.nav-btn {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#search-instructions {
+    font-size: 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+}
+#search-instructions em {
+    font-size: 25px;
+}
+
+#pokedex {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+}
+
+#front {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#cover {
+    animation: open 3s ease-out 1s forwards;
+    position: relative;
+    height: 101.5%;
+    width: 100%;
+    object-fit: contain;
+    margin-top: -115em;
+    z-index: 1;
+}
+
+#textbox {
+    border: none;
+    background-color: transparent;
+    font-size: 60px;
+    position: absolute;
+    right: 5em;
+    top: 6.7em;
+    width: 7em;
+    height: 5em;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    white-space: pre-line;
+}
+
+#textbox:focus {
+    outline: 0;
+}
+
+#open-modal {
+    border: none;
+    background-color: transparent;
+    color: yellow;
+    font-weight: bold;
+    font-size: 47px;
+    position: absolute;
+    bottom: 6.4em;
+    right: 9.5em;
+    width: 6em;
+    height: 4em;
+}
+
+#modal_screen {
+    display: none;
+    text-align: center;
+    position: absolute;
+    font-size: 60px;
+    width: 80%;
+    height: 30em;
+    top: 4em;
+    margin-left: 10%;
+    overflow: scroll;
+    background-color: white;
+}
+
+#modal-close {
+    font-size: 47px;
+    margin-bottom: 40px;
+}
+
+/* Galaxy S21+ 384px × 854px */
+@media (min-width: 415px) and (min-height: 830px) {
+    #textbox {
+        top: 6em;
+        right: 5em;
+    }
+
+    #open-modal {
+        bottom: 5.8em;
+        right: 9.3em;
+    }
+}
+
+/* 50% split on Macbook Pro 13" screen. */
+/* Viewport 640 x 688 */
+@media (min-width: 640px) {
+}
