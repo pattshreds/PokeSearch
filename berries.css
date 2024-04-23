@@ -84,23 +84,17 @@ body {
     font-weight: bold;
 }
 
-#modal {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    top: -2em;
-    width: 80%;
-    height: 100%;
-    z-index: -10;
-}
-
 #modal_screen {
     display: none;
-    background-color: white;
     text-align: center;
-    width: 100%;
+    position: absolute;
+    font-size: 25px;
+    width: 80%;
+    height: 25em;
+    top: -4em;
+    margin-left: 10%;
     overflow: scroll;
+    background-color: white;
 }
 
 #close {
@@ -168,11 +162,13 @@ body {
         width: 30%;
         height: 70svh;
         margin: 0;
+        z-index: 2;
     }
 
     #footer {
         text-align: center;
         width: 100%;
+        z-index: 1;
     }
 
     #picture {
