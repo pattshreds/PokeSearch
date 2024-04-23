@@ -103,12 +103,7 @@ body {
     width: 100%;
     object-fit: contain;
     margin-top: -115em;
-
     z-index: 1;
-}
-
-::-webkit-input-placeholder {
-    white-space: pre-line;
 }
 
 #textbox {
@@ -116,11 +111,19 @@ body {
     background-color: transparent;
     font-size: 60px;
     position: absolute;
-    right: 5.5em;
-    top: 7em;
+    right: 5em;
+    top: 6.7em;
     width: 7em;
     height: 5em;
     text-align: center;
+}
+
+::-webkit-input-placeholder {
+    white-space: pre-line;
+}
+
+#textbox:focus {
+    outline: 0;
 }
 
 #open-modal {
@@ -130,7 +133,7 @@ body {
     font-weight: bold;
     font-size: 47px;
     position: absolute;
-    bottom: 6.5em;
+    bottom: 6.4em;
     right: 9.5em;
     width: 6em;
     height: 4em;
