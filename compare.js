@@ -1,7 +1,8 @@
 $(() => {
     $('#compare').on('click', (event) => {
-        const userInput = $("input[id='textbox1]").val();
-        $('#modal_screen').css('display', 'inline');
+        const userInput = $("input[type='text']").val();
+        $('#modals').css('z-index', '10');
+        $('#modal_screen').css('display', 'block');
 
         $.ajax({
             url: `https://pokeapi.co/api/v2/pokemon/${userInput}/`,
@@ -41,6 +42,7 @@ $(() => {
         const closeModal = () => {
             $('#modal_screen_data').empty();
             $('#modal_screen').css('display', 'none');
+            $('#modals').children(':first').css('z-index', '-10');
             userInput = $("input[type='text']").val('');
         };
         $('#close').on('click', closeModal);
@@ -50,6 +52,7 @@ $(() => {
 
     $('#compare').on('click', (event) => {
         const userInput = $("input[id='textbox2']").val();
+        $('#modals').css('z-index', '10');
         $('#modal_screen2').css('display', 'block');
 
         $.ajax({
@@ -91,6 +94,7 @@ $(() => {
         const closeModal2 = () => {
             $('#modal_screen_data2').empty();
             $('#modal_screen2').css('display', 'none');
+            $('#modals').children(':first').css('z-index', '-10');
             userInput = $("input[type='text']").val('');
         };
         $('#close2').on('click', closeModal2);
