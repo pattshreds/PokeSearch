@@ -65,10 +65,12 @@ body {
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 45em;
+    top: 40em;
     /* border: 4px solid blue; */
 }
 
 #footer img {
     width: 80%;
 }
+
+/* Galaxy S21+ 384px × 854px */
