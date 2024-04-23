@@ -77,7 +77,7 @@ body {
 /* Actual size 412x782 */
 @media (max-height: 800px) {
     #footer {
-        top: 45em;
+        top: 42em;
     }
 
     #footer img {
