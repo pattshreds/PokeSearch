@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js" charset="utf-8">
-    </script>
-    <script src="about.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="about.css">
-    <title>PokéSearch</title>
-  </head>
-  <body>
-    <h1><a href="index.html" id="header">PokéSearch</a></h1>
-    <hr>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="compare.html">Compare Pokémon</a>
-      <a href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki">About Pokémon</a>
-      <a href="berries.html">Berries</a>
-    </nav>
-      <div id="modal_screen">
-          <div id="modal_close">
-            <button id="close">
-            Close
-            </button>
-          </div>
-      </div>
-    <hr>
-    <button type="button" id="about">
-      Learn things about me
-    </button>
-    <footer>
-      <img src="pikachu.png" id="pika" alt="Pika!"/>
-    </footer>
-  </body>
+    <head>
+        <meta charset="utf-8" />
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            charset="utf-8"
+        ></script>
+        <script src="about.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="about.css" />
+        <title>PokéSearch</title>
+    </head>
+    <body>
+        <div id="app-container">
+            <h1 id="app-title">PokéSearch</h1>
+            <nav id="navbar">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="compare.html" class="nav-btn">Compare</a>
+                <a href="berries.html" class="nav-btn">Berries</a>
+                <a
+                    href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki"
+                    class="nav-btn"
+                    >Pokémon</a
+                >
+            </nav>
+            <div id="about-container">
+                <p id="about-body">
+                    Hello there! My name's Patrick, and this project marks my
+                    first month of learning software engineering. I'm an
+                    aspiring developer living in Colorado, and I'm excited to
+                    continue learning and developing. I can't wait to look at
+                    this project 5 years down the line to see how far I will
+                    have come!
+                </p>
+                <p id="technical-details">
+                    To create this application I used HTML, CSS, Javascript /
+                    jQuery, and a Pokémon API from https://pokeapi.co.
+                </p>
+            </div>
+            <div id="footer">
+                <img src="pikachu.png" id="pika" alt="Pika!" />
+            </div>
+        </div>
+    </body>
 </html>

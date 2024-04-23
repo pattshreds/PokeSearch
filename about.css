@@ -1,112 +1,101 @@
+/* Mobile-first styling for viewport size 360x800 */
+
+@font-face {
+    font-family: pokemon-hollow;
+    src: url(Pokemon\ Hollow.ttf);
+}
+
+@keyframes open {
+    0% {
+        position: relative;
+        z-index: 1;
+    }
+    50% {
+        position: relative;
+        z-index: 0;
+    }
+    60% {
+        opacity: 90%;
+    }
+
+    80% {
+        position: relative;
+        z-index: -1;
+        margin-left: 60em;
+        opacity: 80%;
+    }
+    100% {
+        position: relative;
+        z-index: -1;
+        margin-right: 0;
+        display: none;
+        opacity: 0%;
+    }
+}
+
 body {
-  text-align: center;
-  background: linear-gradient(180deg, rgba(30,182,255,1) 0%, rgba(255,215,0,1) 100%);
-  background-attachment: fixed;
+    background: linear-gradient(180deg, #539ae2 0%, #e5c531 80%);
+    background-attachment: fixed;
+    height: 100svh;
 }
 
-#about {
-  margin-top: 150px;
-  background-color: purple;
-  cursor: pointer;
-  border-radius: 20px;
-  width: 300px;
-  height: 50px;
-  color: yellow;
-  font-size: 20px;
+#app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#modal_screen {
-  padding: 10px 30px;
-  border-radius: 25px;
-  box-shadow: 5px 5px 10px black;
-  background-color: white;
-  margin: 25px auto auto auto;
-  text-align: center;
-  font-family: helvetica;
-  left: 0;
-  right: 0;
-  width: 400px;
-  line-height: 25px;
-  display: none;
-  position: absolute;
-  z-index: 1;
-  overflow: scroll;
+#app-title {
+    font-family: pokemon-hollow;
+    color: yellow;
+    font-size: 150px;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
-#close {
-  margin-bottom: 10px;
-  background-color: purple;
-  cursor: pointer;
-  border-radius: 9px;
-  color: yellow;
+#navbar {
+    width: 100%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    height: 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4em;
 }
 
-h1 {
-  margin: 20px auto 0px auto;
-  font-size: 75px;
-  font-family: 'pokemon hollow';
-  color: #ffc600;
-  text-shadow: 0 0 20px black;
-  letter-spacing: 4px;
+.nav-btn {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-h3 {
-  margin-bottom: 0px;
-  font-size: 25px;
+#about-container {
+    width: 90svw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-p {
-  font-family: helvetica;
-  font-size: 18px;
-  letter-spacing: 1px;
+#about-body,
+#technical-details {
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
 }
 
-#picture {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 270px;
-  height: 400px;
+#footer {
+    width: 100svw;
+    position: absolute;
+    left: 3em;
+    bottom: -30em;
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-#header {
-  margin: 20px auto 0px auto;
-  font-size: 75px;
-  font-family: 'pokemon hollow';
-  text-decoration: none;
-  color: #ffc600;
-  text-shadow: 0 0 20px black;
-  letter-spacing: 4px;
-}
-
-a {
-  padding: 0 10px 0 10px;
-  color: black;
-  font-family: helvetica;
-  font-size: 15px;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ff6242;
-  font-weight: bold;
-}
-
-hr {
-  border: 1px solid black;
-  max-width: 1400px;
-}
-
-#pika {
-  position: fixed;
-  bottom: -2px;
-  opacity: .75;
-  text-align: center;
-  width: 200px;
-  left: 150px;
+#footer img {
+    width: 100%;
 }

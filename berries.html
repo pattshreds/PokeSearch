@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.min.js" charset="utf-8">
-    </script>
-    <script src="berries.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="berries.css">
-    <title>PokeSearch</title>
-  </head>
-  <body>
-    <h1><a href="index.html" id="header">PokéSearch</a></h1>
-      <hr>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki">About Pokémon</a>
-          <a href="compare.html">Compare Pokémon</a>
-          <a href="about.html">About the Dev</a>
-        </nav>
-      <hr>
-    <h5><i>Type a Berry name, or Berry ID (1 - 64)</i></h5>
-      <div class="search_container">
-          <input type="text" id="textbox1" placeholder="Choose a berry"/>
-          <button type="button" id="berryBtn">Search for Berries!</button>
-        <div id="modals">
-          <div id="modal_screen">
-            <div id="modal_close">
-              <button class="close">
-              Close
-              </button>
+    <head>
+        <meta charset="utf-8" />
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            charset="utf-8"
+        ></script>
+        <script src="berries.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="berries.css" />
+        <title>PokeSearch</title>
+    </head>
+    <body>
+        <div id="app-container">
+            <h1 id="app-title">PokéSearch</h1>
+            <nav id="navbar">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a class="nav-btn" href="compare.html">Compare</a>
+                <a
+                    class="nav-btn"
+                    href="https://pokemon.fandom.com/wiki/Pok%C3%A9mon_Wiki"
+                    >Pokémon</a
+                >
+                <a class="nav-btn" href="about.html">About</a>
+            </nav>
+            <h1 id="search-instructions">
+                Type a berry name, or berry ID!
+                <br />
+                <em>(ID 1 - 64)</em>
+            </h1>
+            <div id="search_container">
+                <input type="text" id="textbox" placeholder="Choose a berry" />
+                <button type="button" id="berry-btn">
+                    Search for Berries!
+                </button>
+                <div id="modal">
+                    <div id="modal_screen">
+                        <button id="close">Close</button>
+                        <div id="modal_screen_data"></div>
+                    </div>
+                </div>
             </div>
-            <div id="modal_screen_data"></div>
-          </div>
+            <div id="footer">
+                <img src="banner.png" alt="Pokemon banner" />
+            </div>
         </div>
-      </div>
-      <footer>
-        <img src="banner.png" alt="Pokemon banner"/>
-      </footer>
-  </body>
+    </body>
 </html>
