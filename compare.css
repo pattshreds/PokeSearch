@@ -12,10 +12,12 @@ body {
 }
 
 #app-container {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #app-title {
@@ -27,7 +29,7 @@ body {
 }
 
 #navbar {
-    width: 100%;
+    width: 100vw;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     height: 6em;
