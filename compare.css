@@ -9,7 +9,6 @@
 body {
     background: linear-gradient(180deg, #539ae2 0%, #e5c531 80%);
     background-attachment: fixed;
-    height: 100svh;
 }
 
 #app-container {
@@ -125,13 +124,12 @@ body {
 #footer {
     position: absolute;
     bottom: 1em;
-    width: 100svw;
-}
-
-#footer img {
-    width: 100%;
+    width: 80%;
+    margin: 0;
 }
 
 #picture {
-    width: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
