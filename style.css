@@ -1,5 +1,5 @@
 /* Mobile-first styling for viewport size 360x800 */
-/* Chrome dev tools mobile dimensions ~415x880 */
+/* Chrome dev tools mobile dimensions ~415x885 */
 
 @font-face {
     font-family: pokemon-hollow;
@@ -106,7 +106,7 @@ body {
     height: 4.5em;
     position: absolute;
     top: 7em;
-    right: 5em;
+    right: 5.2em;
 }
 
 ::-webkit-input-placeholder {
@@ -125,6 +125,6 @@ body {
     font-size: 18px;
     width: 5em;
     position: absolute;
-    top: 24em;
+    top: 24.2em;
     right: 11em;
 }
