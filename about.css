@@ -74,9 +74,59 @@ body {
 }
 
 /* Galaxy S21+ 384px × 854px */
-@media (min-width: 370px) {
+
+@media (min-width: 420px) {
     #footer img {
         border: 4px solid green;
+        width: 40%;
+    }
+}
+
+@media (min-width: 410px) {
+    #footer img {
+        border: 4px solid blue;
+        width: 40%;
+    }
+}
+
+@media (min-width: 400px) {
+    #footer img {
+        border: 4px solid red;
+        width: 40%;
+    }
+}
+
+@media (min-width: 395px) {
+    #footer img {
+        border: 4px solid orange;
+        width: 40%;
+    }
+}
+
+@media (min-width: 370px) {
+    #footer img {
+        border: 4px solid white;
+        width: 40%;
+    }
+}
+
+@media (min-width: 360px) {
+    #footer img {
+        border: 4px solid black;
+        width: 40%;
+    }
+}
+
+@media (min-width: 350px) {
+    #footer img {
+        border: 4px solid aqua;
+        width: 40%;
+    }
+}
+
+@media (min-width: 340px) {
+    #footer img {
+        border: 4px solid teal;
         width: 40%;
     }
 }
