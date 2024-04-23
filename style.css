@@ -157,7 +157,7 @@ body {
 }
 
 /* Galaxy S21+ 384px × 854px */
-@media (min-height: 800px) {
+@media (min-height: 840px) {
     #textbox {
         top: 6.5em;
     }
