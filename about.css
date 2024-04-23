@@ -90,12 +90,12 @@ body {
 }
 
 #footer {
-    width: 100svw;
+    width: 90svw;
     position: absolute;
     left: 3em;
-    bottom: -28em;
+    bottom: -25em;
 }
 
 #footer img {
-    width: 80%;
+    width: 100%;
 }
