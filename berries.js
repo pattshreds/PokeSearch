@@ -2,7 +2,7 @@ $(() => {
     $('#berry-btn').on('click', (event) => {
         const userInput = $("input[type='text']").val();
         $('#modal_screen').css('display', 'block');
-
+        $('#modal').css('z-index', '10');
         $.ajax({
             url: `https://pokeapi.co/api/v2/berry/${userInput}/`,
         }).then((data) => {
@@ -42,6 +42,7 @@ $(() => {
         const closeModal = () => {
             $('#modal_screen_data').empty();
             $('#modal_screen').css('display', 'none');
+            $('#modal').css('z-index', '-10');
             userInput = $("input[type='text']").val('');
         };
         $('#close').on('click', closeModal);

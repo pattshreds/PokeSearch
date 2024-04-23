@@ -1,4 +1,5 @@
 /* Mobile-first styling for viewport size 360x800 */
+/* Chrome dev tools mobile dimensions ~415x885 */
 
 @font-face {
     font-family: pokemon-hollow;
@@ -8,7 +9,6 @@
 body {
     background: linear-gradient(180deg, #539ae2 0%, #e5c531 80%);
     background-attachment: fixed;
-    height: 100svh;
 }
 
 #app-container {
@@ -20,100 +20,108 @@ body {
 
 #app-title {
     font-family: pokemon-hollow;
-    color: yellow;
-    font-size: 150px;
-    margin-top: 20px;
-    margin-bottom: 0;
+    font-size: 55px;
+    color: #e5c531;
+    margin: 0;
 }
 
 #navbar {
-    width: 100%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    height: 6em;
+    width: 100vw;
+    padding: 10px 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 4em;
+    justify-content: space-around;
+    gap: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .nav-btn {
-    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 #search-instructions {
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 10px;
 }
+
 #search-instructions em {
-    font-size: 25px;
+    font-size: 15px;
 }
 
 #search_container {
     margin: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     margin-top: 40px;
-    width: 100svw;
+    width: 100%;
     height: 70svh;
 }
 
 #textbox {
-    font-size: 60px;
+    font-size: 25px;
     text-align: center;
     border: none;
 }
 
 #berry-btn {
-    margin-top: 20px;
-    font-size: 40px;
+    font-size: 18px;
     border: none;
-    padding: 20px;
+    padding: 6px 10px;
     background-color: #ea7a3c;
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 #modal {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    top: -2em;
+    width: 80%;
     height: 100%;
+    z-index: -10;
 }
 
 #modal_screen {
     display: none;
-    text-align: center;
-    position: absolute;
-    font-size: 60px;
-    width: 80%;
-    height: 30em;
-    top: 4em;
-    margin-left: 10%;
-    overflow: scroll;
     background-color: white;
+    text-align: center;
+    width: 100%;
+    overflow: scroll;
 }
 
 #close {
-    font-size: 47px;
-    margin-bottom: 40px;
+    border: none;
+    margin-top: 15px;
+    padding: 5px 20px;
+    background-color: #ea7a3c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px auto 40px auto;
 }
 
 #footer {
-    width: 100svw;
     position: absolute;
-    bottom: 15px;
+    bottom: 1em;
+    width: 80%;
+    margin: 0;
 }
 
 #footer img {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }

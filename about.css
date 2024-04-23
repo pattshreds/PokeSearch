@@ -1,43 +1,14 @@
 /* Mobile-first styling for viewport size 360x800 */
+/* Chrome dev tools mobile dimensions ~415x885 */
 
 @font-face {
     font-family: pokemon-hollow;
     src: url(Pokemon\ Hollow.ttf);
 }
 
-@keyframes open {
-    0% {
-        position: relative;
-        z-index: 1;
-    }
-    50% {
-        position: relative;
-        z-index: 0;
-    }
-    60% {
-        opacity: 90%;
-    }
-
-    80% {
-        position: relative;
-        z-index: -1;
-        margin-left: 60em;
-        opacity: 80%;
-    }
-    100% {
-        position: relative;
-        z-index: -1;
-        margin-right: 0;
-        display: none;
-        opacity: 0%;
-    }
-}
-
 body {
     background: linear-gradient(180deg, #539ae2 0%, #e5c531 80%);
     background-attachment: fixed;
-    height: 100svh;
-    overflow: hidden;
 }
 
 #app-container {
@@ -49,33 +20,33 @@ body {
 
 #app-title {
     font-family: pokemon-hollow;
-    color: yellow;
-    font-size: 150px;
-    margin-top: 20px;
-    margin-bottom: 0;
+    font-size: 55px;
+    color: #e5c531;
+    margin: 0;
 }
 
 #navbar {
     width: 100%;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    height: 6em;
+    padding: 10px 0;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 4em;
+    justify-content: space-around;
+    gap: 10px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .nav-btn {
-    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 #about-container {
-    width: 90svw;
+    position: relative;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,26 +56,19 @@ body {
 #about-body,
 #technical-details {
     text-align: center;
-    font-size: 50px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
 #footer {
-    width: 90svw;
+    text-align: center;
+    width: 100%;
     position: absolute;
-    left: 3em;
-    bottom: -25em;
+    top: 45em;
+    /* border: 4px solid blue; */
 }
 
 #footer img {
     width: 80%;
-}
-
-/* Galaxy S21+ 384px × 854px */
-@media (min-width: 380px) and (min-height: 850px) {
-    #footer {
-        bottom: -20em;
-        left: 5em;
-    }
 }
