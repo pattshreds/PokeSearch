@@ -92,9 +92,9 @@ body {
     width: 80%;
     height: 25em;
     top: -4em;
-    margin-left: 10%;
     overflow: scroll;
     background-color: white;
+    z-index: 1;
 }
 
 #close {
