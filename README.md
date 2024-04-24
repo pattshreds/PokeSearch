@@ -20,8 +20,9 @@ No installation necessary to view this website. Clone the repo to your machine, 
   <li><s>Animation isn't as responsive as I want it to be.</s></li>
   <li><s>Switch deployment host from GitHub Pages to AWS Amplify.</s></li>
   <li><s>Fix pokedex cover animation in mobile view.</s></li>
-  <li>Fix z-index issue on compare.html in mobile view.</li>
-  <li>Figure out how to change placeholder text on index.html in search textbox depending on viewport size.</li>
+  <li><s>Fix z-index issue on compare.html in mobile view.</s></li>
   <li><s>Fix z-index issue and center modal on berries.html.</s></li>
+  <li>Figure out how to change placeholder text on index.html in search textbox depending on viewport size.</li>
   <li>Improve file structure with seperate directories for JS, HTML, CSS and images.</li>
+  <li>Continue working on pokedex cover animation in pursuit of perfection!</li>
 </ul>
