@@ -2,8 +2,8 @@
 
 This project is deployed and hosted through AWS Amplify.
 <a href="[pattshreds.github.io/pokedex_app/](https://main.darm3e1jlwi31.amplifyapp.com/)">
-  View
-</a>  
+View
+</a>
 
 <hr>
 
@@ -18,10 +18,10 @@ No installation necessary to view this website. Clone the repo to your machine, 
 <ul>
   <li><s>Search bar will only perform one search, then the app needs to be refreshed to search again.</s></li>
   <li><s>Animation isn't as responsive as I want it to be.</s></li>
-  <li><s>Switch deployment host from GitHub Pages to AWS Amplify</s></li>
-  <li>Fix pokedex cover animation in mobile view.</li>
+  <li><s>Switch deployment host from GitHub Pages to AWS Amplify.</s></li>
+  <li><s>Fix pokedex cover animation in mobile view.</s></li>
   <li>Fix z-index issue on compare.html in mobile view.</li>
   <li>Figure out how to change placeholder text on index.html in search textbox depending on viewport size.</li>
-  <li>Fix z-index issue and center modal on berries.html</li>
+  <li><s>Fix z-index issue and center modal on berries.html.</s></li>
   <li>Improve file structure with seperate directories for JS, HTML, CSS and images.</li>
 </ul>

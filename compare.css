@@ -68,6 +68,7 @@ body {
     border: none;
     font-size: 25px;
     text-align: center;
+    z-index: 1;
 }
 
 ::-webkit-input-placeholder {
@@ -87,6 +88,7 @@ body {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    z-index: 1;
 }
 
 .modals {
@@ -97,7 +99,7 @@ body {
     height: 70svh;
     width: 90svw;
     margin-top: -10em;
-    z-index: -10;
+    z-index: 0;
 }
 
 .modal-increase-z-index {

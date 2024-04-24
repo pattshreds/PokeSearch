@@ -90,7 +90,7 @@ $(() => {
         const closeModal2 = () => {
             $('#modal_screen_data, #modal_screen_data2').empty();
             $('#modal_screen, #modal_screen2').css('display', 'none');
-            $('modals').toggleClass('modal-increase-z-index');
+            $('div.modals').toggleClass('modal-increase-z-index');
             userInput = $("input[type='text']").val('');
         };
         $('#close2').on('click', closeModal2);
