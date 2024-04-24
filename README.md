@@ -18,7 +18,7 @@ No installation necessary to view this website. Clone the repo to your machine, 
 <ul>
   <li><s>Search bar will only perform one search, then the app needs to be refreshed to search again.</s></li>
   <li><s>Animation isn't as responsive as I want it to be.</s></li>
-  <li><s></s>Switch deployment host from GitHub Pages to AWS Amplify</s></li>
+  <li><s>Switch deployment host from GitHub Pages to AWS Amplify</s></li>
   <li>Fix pokedex cover animation in mobile view.</li>
   <li>Fix z-index issue on compare page in mobile view.</li>
   <li>Figure out how to change placeholder text on home back in textbox depending on viewport size.</li>
