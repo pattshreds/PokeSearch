@@ -1,0 +1,46 @@
+#pokedex {
+    border: 2px solid red;
+    position: relative;
+    width: 20vw;
+    /* height: 65vh; */
+}
+
+#front {
+    /* height: 100%; */
+    width: 100%;
+    height: auto;
+    /* object-fit: contain; */
+    display: block;
+}
+
+#cover {
+    animation: open 3s ease-out 1s forwards;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#textbox {
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    background-color: transparent;
+    border: 2px solid green;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    height: 20%;
+}
+
+#open-modal {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-yellow);
+    font-size: 1em;
+    width: 15%;
+    top: 67%;
+    left: 23%;
+    cursor: pointer;
+}

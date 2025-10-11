@@ -1,6 +1,3 @@
-/* Mobile-first styling for viewport size 360x800 */
-/* Actual size 412x828 */
-
 @font-face {
     font-family: pokemon-hollow;
     src: url(Pokemon\ Hollow.ttf);
@@ -250,13 +247,16 @@ body {
 
 /* Galaxy S21+ 384px × 854px */
 /* Actual size 412x782 */
-@media (max-height: 800px) and (width < 500px) {
+@media (max-height: 800px) and (max-width: 500px) {
     #textbox {
-        top: 6.5em;
+        /* position: absolute; */
+        top: 5.8em;
+        left: 4.5em;
     }
 
     #open-modal {
-        top: 22.8em;
-        right: 10.9em;
+        /* position: absolute; */
+        top: 21.2em;
+        right: 11.2em;
     }
 }
