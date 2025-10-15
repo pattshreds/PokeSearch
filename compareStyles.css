@@ -1,0 +1,109 @@
+#compare_container {
+    width: 90svw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#textbox1,
+#textbox2 {
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    z-index: 1;
+}
+
+#textbox1:focus,
+#textbox2:focus {
+    outline: 0;
+}
+
+#compare-button {
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    background-color: #ea7a3c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#compare-button:hover {
+    color: black;
+}
+
+.modals {
+    position: relative;
+    top: -160px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    z-index: 0;
+}
+
+.modal-increase-z-index {
+    z-index: 10;
+}
+
+#modal_screen,
+#modal_screen2 {
+    display: none;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 50%;
+    font-size: 15px;
+    overflow: scroll;
+    border: 1px outset white;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+#close,
+#close2 {
+    border: 1px outset rgb(238, 191, 140);
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: var(--primary-orange);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px auto 40px auto;
+}
+
+#modal-close {
+    border: 1px outset rgb(238, 191, 140);
+    border-radius: 5px;
+    padding: 5px 20px;
+    background-color: var(--primary-orange);
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px auto 40px auto;
+}
+
+#footer {
+    position: absolute;
+    bottom: 2em;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#picture {
+    width: 50%;
+}
