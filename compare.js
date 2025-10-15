@@ -1,5 +1,5 @@
 $(() => {
-    $('#compare').on('click', (event) => {
+    $('#compare-button').on('click', (event) => {
         const userInput = $("input[type='text']").val();
         $('div.modals').toggleClass('modal-increase-z-index');
         $('#modal_screen, #modal_screen2').css('display', 'block');
@@ -49,7 +49,7 @@ $(() => {
 
     //==================Modal Two====================================
 
-    $('#compare').on('click', (event) => {
+    $('#compare-button').on('click', (event) => {
         const userInput = $("input[id='textbox2']").val();
         $.ajax({
             url: `https://pokeapi.co/api/v2/pokemon/${userInput}/`,

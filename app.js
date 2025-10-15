@@ -1,5 +1,5 @@
 $(() => {
-    $('#open-modal').on('click', (event) => {
+    $('#open-modal-button').on('click', (event) => {
         const userInput = $("input[type='text']").val();
         $('#modal_screen').css('display', 'block');
         $.ajax({

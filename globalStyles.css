@@ -1,0 +1,40 @@
+:root {
+    --primary-yellow: #e5c531;
+    --primary-orange: #ea7a3c;
+}
+
+@font-face {
+    font-family: pokemon-hollow;
+    src: url(Pokemon\ Hollow.ttf);
+}
+
+body {
+    background-color: #539ae2;
+    background-attachment: fixed;
+    height: 100svh;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app-title {
+    font-family: pokemon-hollow;
+    font-size: 55px;
+    color: var(--primary-yellow);
+    margin: 10px 0 10px 0;
+}
+
+#search-instructions {
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+#search-instructions em {
+    font-size: 15px;
+}

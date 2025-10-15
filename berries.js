@@ -41,7 +41,7 @@ $(() => {
         const closeModal = () => {
             $('#modal_screen_data').empty();
             $('#modal_screen').css('display', 'none');
-            $('#modal').css('z-index', '-10');
+            // $('#modal').css('z-index', '-10');
             userInput = $("input[type='text']").val('');
         };
         $('#close').on('click', closeModal);
